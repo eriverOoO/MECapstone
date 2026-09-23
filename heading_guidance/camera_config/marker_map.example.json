@@ -1,0 +1,8 @@
+{
+  "coordinate_frame": "+X east/right, +Y north/forward, +Z up, yaw counter-clockwise from +X",
+  "markers": [
+    {"id": 0, "x": 0.0, "y": 0.0, "z": 1.2, "yaw_deg": 0.0},
+    {"id": 1, "x": 5.0, "y": 0.0, "z": 1.2, "yaw_deg": 90.0},
+    {"id": 2, "x": 5.0, "y": 5.0, "z": 1.2, "yaw_deg": 180.0}
+  ]
+}

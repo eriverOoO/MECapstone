@@ -1,0 +1,2 @@
+# Optional: only needed for offline ArUco image detection.
+opencv-contrib-python>=4.8,<5.0
