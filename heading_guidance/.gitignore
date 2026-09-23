@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Runtime outputs (keep directories via .gitkeep if desired)
+logs/*.csv
+logs/*.png
+results/*.csv
+results/*.png
