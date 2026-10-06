@@ -3,6 +3,16 @@
 from .interfaces import FrameSource, PoseProvider
 from .models import LocalizationResult, LocalizationStatus, Pose2D
 from .pose_tracker import PoseTracker
+from .slam_foundation import (
+    LandmarkObservation,
+    MappedLandmark,
+    OdometryDelta,
+    OdometryLandmarkBaseline,
+    SlamBackend,
+    SlamInput,
+    SlamUpdate,
+    update_route_from_slam,
+)
 from .synthetic_localizer import SyntheticPoseProvider
 
 __all__ = [
@@ -12,5 +22,13 @@ __all__ = [
     "LocalizationStatus",
     "Pose2D",
     "PoseTracker",
+    "LandmarkObservation",
+    "MappedLandmark",
+    "OdometryDelta",
+    "OdometryLandmarkBaseline",
+    "SlamBackend",
+    "SlamInput",
+    "SlamUpdate",
+    "update_route_from_slam",
     "SyntheticPoseProvider",
 ]

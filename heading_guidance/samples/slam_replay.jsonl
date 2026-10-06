@@ -1,0 +1,4 @@
+{"timestamp_seconds": 1.0, "odometry": {"forward": 1.0}, "landmarks": [{"id": 1, "forward": 4.0, "left": 0.0}]}
+{"timestamp_seconds": 2.0, "odometry": {"forward": 1.0}, "landmarks": [{"id": 1, "forward": 3.0, "left": 0.0}]}
+{"timestamp_seconds": 3.0, "odometry": null}
+{"timestamp_seconds": 4.0, "odometry": {"forward": 1.0}, "landmarks": [{"id": 2, "forward": 2.0, "left": 1.0}]}
