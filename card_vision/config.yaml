@@ -1,0 +1,45 @@
+# All coordinates refer to the resized, camera-rotated processing image.
+input:
+  width: 960
+  rotation: 0                  # clockwise: 0, 90, 180, 270
+  mirror: false
+  stride: 1
+card:
+  fixed_roi: null               # optional stage SEARCH window [x, y, width, height]
+  roi_padding_fraction: 0.10    # extra margin per side; not a card-edge constraint
+  min_area_fraction: 0.08
+  max_area_fraction: 0.90
+  aspect_ratio: 1.586
+  aspect_tolerance: 0.32
+  normalized_width: 640
+  min_score: 0.60
+chip:
+  hsv_lower: [8, 35, 45]
+  hsv_upper: [42, 255, 255]
+  min_area_fraction: 0.008
+  max_area_fraction: 0.09
+  min_score: 0.60
+  ambiguity_margin: 0.10
+quality:
+  min_blur_variance: 25.0
+  min_brightness: 30.0
+  max_brightness: 238.0
+  max_clipped_fraction: 0.30
+  max_motion: 10.0
+orientation:
+  inlet: right                 # right, left, up, down in stage coordinates
+  image_to_stage: [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+  max_axis_angle_deg: 25
+  center_dead_zone: 0.22
+stability:
+  frames: 5                   # consecutive processed observations, not UI redraws
+control:
+  max_flips: 1
+  max_rotations: 1
+  max_recheck_frames: 120
+  action_timeout_seconds: 15
+  observation_timeout_seconds: 20
+output:
+  directory: outputs
+  save_failures: false         # opt-in: may contain card details
+  failure_interval_frames: 60

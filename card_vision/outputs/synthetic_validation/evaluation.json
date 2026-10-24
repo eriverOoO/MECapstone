@@ -1,0 +1,116 @@
+{
+  "processed_frames": 216,
+  "mean_processing_ms": 9.295915277768337,
+  "unknown_ratio": 0.35185185185185186,
+  "labelled_frames": 216,
+  "classification_accuracy": 0.9814814814814815,
+  "card_detection_recall": 1.0,
+  "chip_detection_recall": 0.9930555555555556,
+  "chip_false_positive_count": 0,
+  "card_false_positive_count": 0,
+  "confusion": {
+    "CHIP_NOT_VISIBLE -> CHIP_NOT_VISIBLE": 35,
+    "CHIP_NOT_VISIBLE -> UNKNOWN": 1,
+    "CORRECT -> CORRECT": 70,
+    "CORRECT -> UNKNOWN": 2,
+    "REVERSED -> REVERSED": 35,
+    "REVERSED -> UNKNOWN": 1,
+    "UNKNOWN -> UNKNOWN": 72
+  },
+  "by_card_type": {
+    "synthetic_blue": {
+      "labelled_frames": 180,
+      "classification_accuracy": 0.9833333333333333,
+      "card_detection_recall": 1.0,
+      "chip_detection_recall": 1.0,
+      "chip_false_positive_count": 0,
+      "card_false_positive_count": 0
+    },
+    "synthetic_silver": {
+      "labelled_frames": 36,
+      "classification_accuracy": 0.9722222222222222,
+      "card_detection_recall": 1.0,
+      "chip_detection_recall": 0.9722222222222222,
+      "chip_false_positive_count": 0,
+      "card_false_positive_count": 0
+    }
+  },
+  "decision_latency": [
+    {
+      "file": "demo_correct.avi",
+      "start_frame": 0,
+      "status": "CORRECT",
+      "seconds_to_stable_correct": 0.3333333333333333
+    },
+    {
+      "file": "demo_reversed.avi",
+      "start_frame": 0,
+      "status": "REVERSED",
+      "seconds_to_stable_correct": 0.3333333333333333
+    },
+    {
+      "file": "demo_back.avi",
+      "start_frame": 0,
+      "status": "CHIP_NOT_VISIBLE",
+      "seconds_to_stable_correct": 0.3333333333333333
+    },
+    {
+      "file": "demo_vertical.avi",
+      "start_frame": 0,
+      "status": "UNKNOWN",
+      "seconds_to_stable_correct": null
+    },
+    {
+      "file": "demo_silver.avi",
+      "start_frame": 0,
+      "status": "CORRECT",
+      "seconds_to_stable_correct": 0.3333333333333333
+    },
+    {
+      "file": "demo_empty.avi",
+      "start_frame": 0,
+      "status": "UNKNOWN",
+      "seconds_to_stable_correct": null
+    }
+  ],
+  "unlabelled_frames": 0,
+  "warning": "Synthetic fixtures only. Not real-card accuracy or Raspberry Pi throughput.",
+  "cli_cases": [
+    {
+      "case": "correct",
+      "expected_state": "INSERTING",
+      "actual_state": "INSERTING",
+      "frames": 36
+    },
+    {
+      "case": "reversed",
+      "expected_state": "ROTATING",
+      "actual_state": "ROTATING",
+      "frames": 36
+    },
+    {
+      "case": "back",
+      "expected_state": "FLIPPING",
+      "actual_state": "FLIPPING",
+      "frames": 36
+    },
+    {
+      "case": "vertical",
+      "expected_state": "ANALYZING",
+      "actual_state": "ANALYZING",
+      "frames": 36
+    },
+    {
+      "case": "silver",
+      "expected_state": "INSERTING",
+      "actual_state": "INSERTING",
+      "frames": 36
+    },
+    {
+      "case": "empty",
+      "expected_state": "WAITING_FOR_CARD",
+      "actual_state": "WAITING_FOR_CARD",
+      "frames": 36
+    }
+  ]
+}

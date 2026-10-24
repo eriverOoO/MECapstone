@@ -1,0 +1,80 @@
+[
+  {
+    "id": "nh_front",
+    "ok": true,
+    "file": "images\\originals\\nh_front.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/NH%EC%B2%B4%ED%81%AC%EC%B9%B4%EB%93%9C_%28%EC%95%9E%EB%A9%B4%29.jpg/1920px-NH%EC%B2%B4%ED%81%AC%EC%B9%B4%EB%93%9C_%28%EC%95%9E%EB%A9%B4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "id": "nh_back",
+    "ok": true,
+    "file": "images\\originals\\nh_back.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/NH%EC%B2%B4%ED%81%AC%EC%B9%B4%EB%93%9C_%28%EB%92%B7%EB%A9%B4%29.jpg/1920px-NH%EC%B2%B4%ED%81%AC%EC%B9%B4%EB%93%9C_%28%EB%92%B7%EB%A9%B4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "id": "jago_front",
+    "ok": true,
+    "file": "images\\originals\\jago_front.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Front_of_Bank_Jago_Visa_Debit_card.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+  },
+  {
+    "id": "jago_back",
+    "ok": true,
+    "file": "images\\originals\\jago_back.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Back_of_Bank_Jago_Visa_Debit_card.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+  },
+  {
+    "id": "piraeus_master_front",
+    "ok": true,
+    "file": "images\\originals\\piraeus_master_front.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Piraeus_Bank_Mastercard_Debit_Card_%28Front%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+  },
+  {
+    "id": "piraeus_master_back",
+    "ok": true,
+    "file": "images\\originals\\piraeus_master_back.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Piraeus_Bank_Mastercard_Debit_Card_%28Back%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+  },
+  {
+    "id": "piraeus_visa_front",
+    "ok": true,
+    "file": "images\\originals\\piraeus_visa_front.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Piraeus_Bank_Visa_Debit_Card_%28Front%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+  },
+  {
+    "id": "piraeus_visa_back",
+    "ok": true,
+    "file": "images\\originals\\piraeus_visa_back.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Piraeus_Bank_Visa_Debit_Card_%28Back%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+  },
+  {
+    "id": "aircash_front",
+    "ok": true,
+    "file": "images\\originals\\aircash_front.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Aircash_Mastercard_Prepaid_Card_%28Front%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+  },
+  {
+    "id": "aircash_back",
+    "ok": true,
+    "file": "images\\originals\\aircash_back.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Aircash_Mastercard_Prepaid_Card_%28Back%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+  },
+  {
+    "id": "sbi_front",
+    "ok": true,
+    "file": "images\\originals\\sbi_front.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Sumishin_SBI_Net_bank_New_Debit_Card_%28Master%29.jpg/1920px-Sumishin_SBI_Net_bank_New_Debit_Card_%28Master%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "id": "sbi_back",
+    "ok": true,
+    "file": "images\\originals\\sbi_back.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Sumishin_SBI_Net_bank_New_Debit_Card_%28Master%29_Back_side.png/1920px-Sumishin_SBI_Net_bank_New_Debit_Card_%28Master%29_Back_side.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "id": "plain_back",
+    "ok": true,
+    "file": "images\\originals\\plain_back.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Blank_back_of_payment_card.jpg/1920px-Blank_back_of_payment_card.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  }
+]

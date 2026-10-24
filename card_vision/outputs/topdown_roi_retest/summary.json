@@ -1,0 +1,204 @@
+{
+  "total_images": 169,
+  "processed_images": 169,
+  "read_or_processing_errors": 0,
+  "annotation_errors": 0,
+  "card_detection_rate": 0.6331360946745562,
+  "chip_detection_rate": 0.378698224852071,
+  "unknown_ratio": 0.727810650887574,
+  "mean_processing_ms": 6.692084023576473,
+  "labelled_images": 0,
+  "labelled_input_errors": 0,
+  "classification_accuracy": null,
+  "card_detection_recall": null,
+  "chip_detection_recall": null,
+  "card_false_positive_count": null,
+  "chip_false_positive_count": null,
+  "confusion": {},
+  "card_flags": 107,
+  "chip_flags": 64,
+  "unknown_count": 123,
+  "changed_results": [
+    {
+      "file": "planar_variants/plain_back__blur_0.jpg",
+      "before": {
+        "card_detected": true,
+        "chip_detected": false,
+        "status": "CHIP_NOT_VISIBLE",
+        "reason": "no_chip_candidate"
+      },
+      "after": {
+        "card_detected": false,
+        "chip_detected": false,
+        "status": "UNKNOWN",
+        "reason": "no_card"
+      }
+    },
+    {
+      "file": "planar_variants/plain_back__center_0.jpg",
+      "before": {
+        "card_detected": true,
+        "chip_detected": false,
+        "status": "CHIP_NOT_VISIBLE",
+        "reason": "no_chip_candidate"
+      },
+      "after": {
+        "card_detected": false,
+        "chip_detected": false,
+        "status": "UNKNOWN",
+        "reason": "no_card"
+      }
+    },
+    {
+      "file": "planar_variants/plain_back__center_180.jpg",
+      "before": {
+        "card_detected": true,
+        "chip_detected": false,
+        "status": "CHIP_NOT_VISIBLE",
+        "reason": "no_chip_candidate"
+      },
+      "after": {
+        "card_detected": false,
+        "chip_detected": false,
+        "status": "UNKNOWN",
+        "reason": "no_card"
+      }
+    },
+    {
+      "file": "planar_variants/plain_back__dim_0.jpg",
+      "before": {
+        "card_detected": true,
+        "chip_detected": false,
+        "status": "CHIP_NOT_VISIBLE",
+        "reason": "no_chip_candidate"
+      },
+      "after": {
+        "card_detected": false,
+        "chip_detected": false,
+        "status": "UNKNOWN",
+        "reason": "no_card"
+      }
+    },
+    {
+      "file": "planar_variants/plain_back__down_0.jpg",
+      "before": {
+        "card_detected": true,
+        "chip_detected": false,
+        "status": "CHIP_NOT_VISIBLE",
+        "reason": "no_chip_candidate"
+      },
+      "after": {
+        "card_detected": false,
+        "chip_detected": false,
+        "status": "UNKNOWN",
+        "reason": "no_card"
+      }
+    },
+    {
+      "file": "planar_variants/plain_back__left_0.jpg",
+      "before": {
+        "card_detected": true,
+        "chip_detected": false,
+        "status": "CHIP_NOT_VISIBLE",
+        "reason": "no_chip_candidate"
+      },
+      "after": {
+        "card_detected": false,
+        "chip_detected": false,
+        "status": "UNKNOWN",
+        "reason": "no_card"
+      }
+    },
+    {
+      "file": "planar_variants/plain_back__left_12.jpg",
+      "before": {
+        "card_detected": true,
+        "chip_detected": false,
+        "status": "CHIP_NOT_VISIBLE",
+        "reason": "no_chip_candidate"
+      },
+      "after": {
+        "card_detected": false,
+        "chip_detected": false,
+        "status": "UNKNOWN",
+        "reason": "no_card"
+      }
+    },
+    {
+      "file": "planar_variants/plain_back__lowres_0.jpg",
+      "before": {
+        "card_detected": true,
+        "chip_detected": false,
+        "status": "CHIP_NOT_VISIBLE",
+        "reason": "no_chip_candidate"
+      },
+      "after": {
+        "card_detected": false,
+        "chip_detected": false,
+        "status": "UNKNOWN",
+        "reason": "no_card"
+      }
+    },
+    {
+      "file": "planar_variants/plain_back__right_0.jpg",
+      "before": {
+        "card_detected": true,
+        "chip_detected": false,
+        "status": "CHIP_NOT_VISIBLE",
+        "reason": "no_chip_candidate"
+      },
+      "after": {
+        "card_detected": false,
+        "chip_detected": false,
+        "status": "UNKNOWN",
+        "reason": "no_card"
+      }
+    },
+    {
+      "file": "planar_variants/plain_back__right_m12.jpg",
+      "before": {
+        "card_detected": true,
+        "chip_detected": false,
+        "status": "CHIP_NOT_VISIBLE",
+        "reason": "no_chip_candidate"
+      },
+      "after": {
+        "card_detected": false,
+        "chip_detected": false,
+        "status": "UNKNOWN",
+        "reason": "no_card"
+      }
+    },
+    {
+      "file": "planar_variants/plain_back__up_0.jpg",
+      "before": {
+        "card_detected": true,
+        "chip_detected": false,
+        "status": "CHIP_NOT_VISIBLE",
+        "reason": "no_chip_candidate"
+      },
+      "after": {
+        "card_detected": false,
+        "chip_detected": false,
+        "status": "UNKNOWN",
+        "reason": "no_card"
+      }
+    },
+    {
+      "file": "planar_variants/plain_back__up_180.jpg",
+      "before": {
+        "card_detected": true,
+        "chip_detected": false,
+        "status": "CHIP_NOT_VISIBLE",
+        "reason": "no_chip_candidate"
+      },
+      "after": {
+        "card_detected": false,
+        "chip_detected": false,
+        "status": "UNKNOWN",
+        "reason": "no_card"
+      }
+    }
+  ],
+  "chip_flags_on_back_images": 19
+}

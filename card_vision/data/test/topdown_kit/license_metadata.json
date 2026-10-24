@@ -1,0 +1,132 @@
+[
+  {
+    "id": "nh_front",
+    "source_url": "https://commons.wikimedia.org/wiki/File:NH체크카드_(앞면).jpg",
+    "LicenseShortName": "CC0",
+    "LicenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "Artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Chapaguri&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Chapaguri (page does not exist)\">Chapaguri</a>",
+    "Credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+    "Attribution": null,
+    "UsageTerms": "Creative Commons Zero, Public Domain Dedication"
+  },
+  {
+    "id": "nh_back",
+    "source_url": "https://commons.wikimedia.org/wiki/File:NH체크카드_(뒷면).jpg",
+    "LicenseShortName": "CC0",
+    "LicenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "Artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Chapaguri&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Chapaguri (page does not exist)\">Chapaguri</a>",
+    "Credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+    "Attribution": null,
+    "UsageTerms": "Creative Commons Zero, Public Domain Dedication"
+  },
+  {
+    "id": "jago_front",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Front_of_Bank_Jago_Visa_Debit_card.jpg",
+    "LicenseShortName": "CC BY 4.0",
+    "LicenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "Artist": "<a href=\"//commons.wikimedia.org/wiki/User:VulcanSphere\" title=\"User:VulcanSphere\">VulcanSphere</a>",
+    "Credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+    "Attribution": "© <a href=\"//commons.wikimedia.org/wiki/User:VulcanSphere\" title=\"User:VulcanSphere\">VulcanSphere</a> / Wikimedia Commons / CC BY 4.0",
+    "UsageTerms": "Creative Commons Attribution 4.0"
+  },
+  {
+    "id": "jago_back",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Back_of_Bank_Jago_Visa_Debit_card.jpg",
+    "LicenseShortName": "CC BY 4.0",
+    "LicenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "Artist": "<a href=\"//commons.wikimedia.org/wiki/User:VulcanSphere\" title=\"User:VulcanSphere\">VulcanSphere</a>",
+    "Credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+    "Attribution": "© <a href=\"//commons.wikimedia.org/wiki/User:VulcanSphere\" title=\"User:VulcanSphere\">VulcanSphere</a> / Wikimedia Commons / CC BY 4.0",
+    "UsageTerms": "Creative Commons Attribution 4.0"
+  },
+  {
+    "id": "piraeus_master_front",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Piraeus_Bank_Mastercard_Debit_Card_(Front).png",
+    "LicenseShortName": "CC BY-SA 4.0",
+    "LicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "Artist": "<a href=\"//commons.wikimedia.org/wiki/User:Filippos_Fragkogiannis\" title=\"User:Filippos Fragkogiannis\">Filippos Fragkogiannis</a>",
+    "Credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+    "Attribution": null,
+    "UsageTerms": "Creative Commons Attribution-Share Alike 4.0"
+  },
+  {
+    "id": "piraeus_master_back",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Piraeus_Bank_Mastercard_Debit_Card_(Back).png",
+    "LicenseShortName": "CC BY-SA 4.0",
+    "LicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "Artist": "<a href=\"//commons.wikimedia.org/wiki/User:Filippos_Fragkogiannis\" title=\"User:Filippos Fragkogiannis\">Filippos Fragkogiannis</a>",
+    "Credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+    "Attribution": null,
+    "UsageTerms": "Creative Commons Attribution-Share Alike 4.0"
+  },
+  {
+    "id": "piraeus_visa_front",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Piraeus_Bank_Visa_Debit_Card_(Front).png",
+    "LicenseShortName": "CC BY-SA 4.0",
+    "LicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "Artist": "<a href=\"//commons.wikimedia.org/wiki/User:Filippos_Fragkogiannis\" title=\"User:Filippos Fragkogiannis\">Filippos Fragkogiannis</a>",
+    "Credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+    "Attribution": null,
+    "UsageTerms": "Creative Commons Attribution-Share Alike 4.0"
+  },
+  {
+    "id": "piraeus_visa_back",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Piraeus_Bank_Visa_Debit_Card_(Back).png",
+    "LicenseShortName": "CC BY-SA 4.0",
+    "LicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "Artist": "<a href=\"//commons.wikimedia.org/wiki/User:Filippos_Fragkogiannis\" title=\"User:Filippos Fragkogiannis\">Filippos Fragkogiannis</a>",
+    "Credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+    "Attribution": null,
+    "UsageTerms": "Creative Commons Attribution-Share Alike 4.0"
+  },
+  {
+    "id": "aircash_front",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Aircash_Mastercard_Prepaid_Card_(Front).png",
+    "LicenseShortName": "CC BY-SA 4.0",
+    "LicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "Artist": "<a href=\"//commons.wikimedia.org/wiki/User:Filippos_Fragkogiannis\" title=\"User:Filippos Fragkogiannis\">Filippos Fragkogiannis</a>",
+    "Credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+    "Attribution": null,
+    "UsageTerms": "Creative Commons Attribution-Share Alike 4.0"
+  },
+  {
+    "id": "aircash_back",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Aircash_Mastercard_Prepaid_Card_(Back).png",
+    "LicenseShortName": "CC BY-SA 4.0",
+    "LicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "Artist": "<a href=\"//commons.wikimedia.org/wiki/User:Filippos_Fragkogiannis\" title=\"User:Filippos Fragkogiannis\">Filippos Fragkogiannis</a>",
+    "Credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+    "Attribution": null,
+    "UsageTerms": "Creative Commons Attribution-Share Alike 4.0"
+  },
+  {
+    "id": "sbi_front",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sumishin_SBI_Net_bank_New_Debit_Card_(Master).jpg",
+    "LicenseShortName": "CC BY-SA 4.0",
+    "LicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "Artist": "<a href=\"//commons.wikimedia.org/wiki/User:Rory_trains\" title=\"User:Rory trains\">Rory trains</a>",
+    "Credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+    "Attribution": null,
+    "UsageTerms": "Creative Commons Attribution-Share Alike 4.0"
+  },
+  {
+    "id": "sbi_back",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sumishin_SBI_Net_bank_New_Debit_Card_(Master)_Back_side.png",
+    "LicenseShortName": "CC BY-SA 4.0",
+    "LicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "Artist": "<a href=\"//commons.wikimedia.org/wiki/User:Rory_trains\" title=\"User:Rory trains\">Rory trains</a>",
+    "Credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+    "Attribution": null,
+    "UsageTerms": "Creative Commons Attribution-Share Alike 4.0"
+  },
+  {
+    "id": "plain_back",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Blank_back_of_payment_card.jpg",
+    "LicenseShortName": "CC BY-SA 4.0",
+    "LicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "Artist": "<a href=\"//commons.wikimedia.org/wiki/User:Zunter\" title=\"User:Zunter\">Santeri Viinamäki</a>",
+    "Credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+    "Attribution": "Santeri Viinamäki",
+    "UsageTerms": "Creative Commons Attribution-Share Alike 4.0"
+  }
+]

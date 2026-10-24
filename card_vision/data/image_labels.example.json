@@ -1,0 +1,14 @@
+[
+  {
+    "file": "internet/card01.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "CORRECT"
+  },
+  {
+    "file": "phone/card02.png",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  }
+]

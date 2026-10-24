@@ -1,0 +1,4 @@
+# Optional: only for downloading the evaluation kit and rendering report sheets.
+-r requirements.txt
+requests>=2.31,<3
+Pillow>=10,<14

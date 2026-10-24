@@ -1,0 +1,44 @@
+.deps/
+.venv/
+.uv-cache/
+__pycache__/
+*.pyc
+card_vision/data/videos/*
+card_vision/data/images/*
+card_vision/data/test/*
+card_vision/outputs/*
+!**/.gitkeep
+
+# Publish reviewed evaluation artifacts, not arbitrary future camera captures.
+!card_vision/outputs/topdown_kit_baseline/
+card_vision/outputs/topdown_kit_baseline/*
+!card_vision/outputs/topdown_kit_baseline/*.md
+!card_vision/outputs/topdown_kit_baseline/*.py
+!card_vision/outputs/topdown_kit_baseline/*.png
+!card_vision/outputs/topdown_kit_baseline/batch_20261024_153642_f36f4efa/
+!card_vision/outputs/topdown_kit_baseline/batch_20261024_153642_f36f4efa/**
+!card_vision/outputs/topdown_roi_retest/
+!card_vision/outputs/topdown_roi_retest/**
+!card_vision/outputs/stage_roi_validation/
+!card_vision/outputs/stage_roi_validation/**
+!card_vision/outputs/synthetic_validation/
+card_vision/outputs/synthetic_validation/*
+!card_vision/outputs/synthetic_validation/*.png
+!card_vision/outputs/synthetic_validation/*.json
+
+# Preserve source attribution and download recipes; omit raw image/video data.
+!card_vision/data/test/topdown_kit/
+card_vision/data/test/topdown_kit/*
+!card_vision/data/test/topdown_kit/README.md
+!card_vision/data/test/topdown_kit/sources.csv
+!card_vision/data/test/topdown_kit/download_cards.py
+!card_vision/data/test/topdown_kit/download_results.json
+!card_vision/data/test/topdown_kit/variant_labels.csv
+!card_vision/data/test/topdown_kit/license_metadata.json
+
+# Keep these exclusions after recursive artifact allowlists.
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example

@@ -1,0 +1,1016 @@
+{
+  "originals/aircash_back.jpg": [
+    28,
+    19,
+    904,
+    608
+  ],
+  "originals/aircash_front.jpg": [
+    28,
+    19,
+    904,
+    608
+  ],
+  "originals/jago_back.jpg": [
+    19,
+    25,
+    922,
+    1246
+  ],
+  "originals/jago_front.jpg": [
+    19,
+    26,
+    922,
+    1283
+  ],
+  "originals/nh_back.jpg": [
+    124,
+    35,
+    692,
+    356
+  ],
+  "originals/nh_front.jpg": [
+    163,
+    44,
+    673,
+    347
+  ],
+  "originals/piraeus_master_back.jpg": [
+    28,
+    28,
+    904,
+    1370
+  ],
+  "originals/piraeus_master_front.jpg": [
+    28,
+    28,
+    904,
+    1370
+  ],
+  "originals/piraeus_visa_back.jpg": [
+    28,
+    19,
+    904,
+    608
+  ],
+  "originals/piraeus_visa_front.jpg": [
+    28,
+    19,
+    904,
+    608
+  ],
+  "originals/plain_back.jpg": [
+    115,
+    144,
+    769,
+    520
+  ],
+  "originals/sbi_back.jpg": [
+    9,
+    13,
+    942,
+    632
+  ],
+  "originals/sbi_front.jpg": [
+    9,
+    13,
+    942,
+    624
+  ],
+  "planar_variants/aircash_back__blur_0.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/aircash_back__center_0.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/aircash_back__center_180.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/aircash_back__dim_0.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/aircash_back__down_0.jpg": [
+    261,
+    310,
+    438,
+    295
+  ],
+  "planar_variants/aircash_back__left_0.jpg": [
+    118,
+    212,
+    439,
+    295
+  ],
+  "planar_variants/aircash_back__left_12.jpg": [
+    123,
+    170,
+    489,
+    379
+  ],
+  "planar_variants/aircash_back__lowres_0.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/aircash_back__right_0.jpg": [
+    403,
+    212,
+    439,
+    295
+  ],
+  "planar_variants/aircash_back__right_m12.jpg": [
+    348,
+    170,
+    489,
+    379
+  ],
+  "planar_variants/aircash_back__up_0.jpg": [
+    261,
+    115,
+    438,
+    295
+  ],
+  "planar_variants/aircash_back__up_180.jpg": [
+    261,
+    130,
+    438,
+    295
+  ],
+  "planar_variants/aircash_front__blur_0.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/aircash_front__center_0.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/aircash_front__center_180.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/aircash_front__dim_0.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/aircash_front__down_0.jpg": [
+    261,
+    310,
+    438,
+    295
+  ],
+  "planar_variants/aircash_front__left_0.jpg": [
+    118,
+    212,
+    439,
+    295
+  ],
+  "planar_variants/aircash_front__left_12.jpg": [
+    123,
+    170,
+    489,
+    379
+  ],
+  "planar_variants/aircash_front__lowres_0.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/aircash_front__right_0.jpg": [
+    403,
+    212,
+    439,
+    295
+  ],
+  "planar_variants/aircash_front__right_m12.jpg": [
+    348,
+    170,
+    489,
+    379
+  ],
+  "planar_variants/aircash_front__up_0.jpg": [
+    261,
+    115,
+    438,
+    295
+  ],
+  "planar_variants/aircash_front__up_180.jpg": [
+    261,
+    130,
+    438,
+    295
+  ],
+  "planar_variants/jago_back__blur_0.jpg": [
+    314,
+    136,
+    331,
+    448
+  ],
+  "planar_variants/jago_back__center_0.jpg": [
+    314,
+    136,
+    331,
+    448
+  ],
+  "planar_variants/jago_back__center_180.jpg": [
+    314,
+    136,
+    331,
+    448
+  ],
+  "planar_variants/jago_back__dim_0.jpg": [
+    314,
+    136,
+    331,
+    448
+  ],
+  "planar_variants/jago_back__down_0.jpg": [
+    314,
+    234,
+    331,
+    447
+  ],
+  "planar_variants/jago_back__left_0.jpg": [
+    171,
+    136,
+    332,
+    448
+  ],
+  "planar_variants/jago_back__left_12.jpg": [
+    159,
+    107,
+    417,
+    506
+  ],
+  "planar_variants/jago_back__lowres_0.jpg": [
+    314,
+    136,
+    331,
+    448
+  ],
+  "planar_variants/jago_back__right_0.jpg": [
+    456,
+    136,
+    332,
+    448
+  ],
+  "planar_variants/jago_back__right_m12.jpg": [
+    384,
+    107,
+    417,
+    506
+  ],
+  "planar_variants/jago_back__up_0.jpg": [
+    314,
+    39,
+    331,
+    447
+  ],
+  "planar_variants/jago_back__up_180.jpg": [
+    314,
+    54,
+    331,
+    447
+  ],
+  "planar_variants/jago_front__blur_0.jpg": [
+    319,
+    136,
+    322,
+    448
+  ],
+  "planar_variants/jago_front__center_0.jpg": [
+    319,
+    136,
+    322,
+    448
+  ],
+  "planar_variants/jago_front__center_180.jpg": [
+    319,
+    136,
+    322,
+    448
+  ],
+  "planar_variants/jago_front__dim_0.jpg": [
+    319,
+    136,
+    322,
+    448
+  ],
+  "planar_variants/jago_front__down_0.jpg": [
+    319,
+    234,
+    322,
+    447
+  ],
+  "planar_variants/jago_front__left_0.jpg": [
+    176,
+    136,
+    323,
+    448
+  ],
+  "planar_variants/jago_front__left_12.jpg": [
+    164,
+    108,
+    407,
+    504
+  ],
+  "planar_variants/jago_front__lowres_0.jpg": [
+    319,
+    136,
+    322,
+    448
+  ],
+  "planar_variants/jago_front__right_0.jpg": [
+    461,
+    136,
+    323,
+    448
+  ],
+  "planar_variants/jago_front__right_m12.jpg": [
+    389,
+    108,
+    407,
+    504
+  ],
+  "planar_variants/jago_front__up_0.jpg": [
+    319,
+    39,
+    322,
+    447
+  ],
+  "planar_variants/jago_front__up_180.jpg": [
+    319,
+    54,
+    322,
+    447
+  ],
+  "planar_variants/nh_back__blur_0.jpg": [
+    307,
+    269,
+    336,
+    173
+  ],
+  "planar_variants/nh_back__center_0.jpg": [
+    307,
+    269,
+    336,
+    173
+  ],
+  "planar_variants/nh_back__center_180.jpg": [
+    317,
+    277,
+    336,
+    174
+  ],
+  "planar_variants/nh_back__dim_0.jpg": [
+    307,
+    269,
+    336,
+    173
+  ],
+  "planar_variants/nh_back__down_0.jpg": [
+    307,
+    366,
+    336,
+    173
+  ],
+  "planar_variants/nh_back__left_0.jpg": [
+    165,
+    269,
+    336,
+    173
+  ],
+  "planar_variants/nh_back__left_12.jpg": [
+    180,
+    237,
+    364,
+    239
+  ],
+  "planar_variants/nh_back__lowres_0.jpg": [
+    307,
+    269,
+    336,
+    173
+  ],
+  "planar_variants/nh_back__right_0.jpg": [
+    450,
+    269,
+    336,
+    173
+  ],
+  "planar_variants/nh_back__right_m12.jpg": [
+    407,
+    235,
+    364,
+    239
+  ],
+  "planar_variants/nh_back__up_0.jpg": [
+    307,
+    171,
+    336,
+    173
+  ],
+  "planar_variants/nh_back__up_180.jpg": [
+    317,
+    195,
+    336,
+    173
+  ],
+  "planar_variants/nh_front__blur_0.jpg": [
+    326,
+    273,
+    327,
+    169
+  ],
+  "planar_variants/nh_front__center_0.jpg": [
+    326,
+    273,
+    327,
+    169
+  ],
+  "planar_variants/nh_front__center_180.jpg": [
+    307,
+    277,
+    327,
+    169
+  ],
+  "planar_variants/nh_front__dim_0.jpg": [
+    326,
+    273,
+    327,
+    169
+  ],
+  "planar_variants/nh_front__down_0.jpg": [
+    326,
+    371,
+    327,
+    168
+  ],
+  "planar_variants/nh_front__left_0.jpg": [
+    184,
+    273,
+    326,
+    169
+  ],
+  "planar_variants/nh_front__left_12.jpg": [
+    199,
+    239,
+    354,
+    233
+  ],
+  "planar_variants/nh_front__lowres_0.jpg": [
+    326,
+    273,
+    327,
+    169
+  ],
+  "planar_variants/nh_front__right_0.jpg": [
+    469,
+    273,
+    326,
+    169
+  ],
+  "planar_variants/nh_front__right_m12.jpg": [
+    425,
+    243,
+    354,
+    233
+  ],
+  "planar_variants/nh_front__up_0.jpg": [
+    326,
+    176,
+    327,
+    168
+  ],
+  "planar_variants/nh_front__up_180.jpg": [
+    307,
+    195,
+    327,
+    169
+  ],
+  "planar_variants/piraeus_master_back__blur_0.jpg": [
+    332,
+    136,
+    295,
+    448
+  ],
+  "planar_variants/piraeus_master_back__center_0.jpg": [
+    332,
+    136,
+    295,
+    448
+  ],
+  "planar_variants/piraeus_master_back__center_180.jpg": [
+    332,
+    136,
+    295,
+    448
+  ],
+  "planar_variants/piraeus_master_back__dim_0.jpg": [
+    332,
+    136,
+    295,
+    448
+  ],
+  "planar_variants/piraeus_master_back__down_0.jpg": [
+    332,
+    234,
+    295,
+    447
+  ],
+  "planar_variants/piraeus_master_back__left_0.jpg": [
+    190,
+    136,
+    295,
+    448
+  ],
+  "planar_variants/piraeus_master_back__left_12.jpg": [
+    176,
+    111,
+    382,
+    498
+  ],
+  "planar_variants/piraeus_master_back__lowres_0.jpg": [
+    332,
+    136,
+    295,
+    448
+  ],
+  "planar_variants/piraeus_master_back__right_0.jpg": [
+    475,
+    136,
+    295,
+    448
+  ],
+  "planar_variants/piraeus_master_back__right_m12.jpg": [
+    401,
+    111,
+    382,
+    498
+  ],
+  "planar_variants/piraeus_master_back__up_0.jpg": [
+    332,
+    39,
+    295,
+    447
+  ],
+  "planar_variants/piraeus_master_back__up_180.jpg": [
+    332,
+    54,
+    295,
+    447
+  ],
+  "planar_variants/piraeus_master_front__blur_0.jpg": [
+    332,
+    136,
+    295,
+    448
+  ],
+  "planar_variants/piraeus_master_front__center_0.jpg": [
+    332,
+    136,
+    295,
+    448
+  ],
+  "planar_variants/piraeus_master_front__center_180.jpg": [
+    332,
+    136,
+    295,
+    448
+  ],
+  "planar_variants/piraeus_master_front__dim_0.jpg": [
+    332,
+    136,
+    295,
+    448
+  ],
+  "planar_variants/piraeus_master_front__down_0.jpg": [
+    332,
+    234,
+    295,
+    447
+  ],
+  "planar_variants/piraeus_master_front__left_0.jpg": [
+    190,
+    136,
+    295,
+    448
+  ],
+  "planar_variants/piraeus_master_front__left_12.jpg": [
+    176,
+    111,
+    382,
+    498
+  ],
+  "planar_variants/piraeus_master_front__lowres_0.jpg": [
+    332,
+    136,
+    295,
+    448
+  ],
+  "planar_variants/piraeus_master_front__right_0.jpg": [
+    475,
+    136,
+    295,
+    448
+  ],
+  "planar_variants/piraeus_master_front__right_m12.jpg": [
+    401,
+    111,
+    382,
+    498
+  ],
+  "planar_variants/piraeus_master_front__up_0.jpg": [
+    332,
+    39,
+    295,
+    447
+  ],
+  "planar_variants/piraeus_master_front__up_180.jpg": [
+    332,
+    54,
+    295,
+    447
+  ],
+  "planar_variants/piraeus_visa_back__blur_0.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/piraeus_visa_back__center_0.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/piraeus_visa_back__center_180.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/piraeus_visa_back__dim_0.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/piraeus_visa_back__down_0.jpg": [
+    261,
+    310,
+    438,
+    295
+  ],
+  "planar_variants/piraeus_visa_back__left_0.jpg": [
+    118,
+    212,
+    439,
+    295
+  ],
+  "planar_variants/piraeus_visa_back__left_12.jpg": [
+    123,
+    170,
+    489,
+    379
+  ],
+  "planar_variants/piraeus_visa_back__lowres_0.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/piraeus_visa_back__right_0.jpg": [
+    403,
+    212,
+    439,
+    295
+  ],
+  "planar_variants/piraeus_visa_back__right_m12.jpg": [
+    348,
+    170,
+    489,
+    379
+  ],
+  "planar_variants/piraeus_visa_back__up_0.jpg": [
+    261,
+    115,
+    438,
+    295
+  ],
+  "planar_variants/piraeus_visa_back__up_180.jpg": [
+    261,
+    130,
+    438,
+    295
+  ],
+  "planar_variants/piraeus_visa_front__blur_0.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/piraeus_visa_front__center_0.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/piraeus_visa_front__center_180.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/piraeus_visa_front__dim_0.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/piraeus_visa_front__down_0.jpg": [
+    261,
+    310,
+    438,
+    295
+  ],
+  "planar_variants/piraeus_visa_front__left_0.jpg": [
+    118,
+    212,
+    439,
+    295
+  ],
+  "planar_variants/piraeus_visa_front__left_12.jpg": [
+    123,
+    170,
+    489,
+    379
+  ],
+  "planar_variants/piraeus_visa_front__lowres_0.jpg": [
+    261,
+    212,
+    438,
+    295
+  ],
+  "planar_variants/piraeus_visa_front__right_0.jpg": [
+    403,
+    212,
+    439,
+    295
+  ],
+  "planar_variants/piraeus_visa_front__right_m12.jpg": [
+    348,
+    170,
+    489,
+    379
+  ],
+  "planar_variants/piraeus_visa_front__up_0.jpg": [
+    261,
+    115,
+    438,
+    295
+  ],
+  "planar_variants/piraeus_visa_front__up_180.jpg": [
+    261,
+    130,
+    438,
+    295
+  ],
+  "planar_variants/plain_back__blur_0.jpg": [
+    303,
+    255,
+    373,
+    252
+  ],
+  "planar_variants/plain_back__center_0.jpg": [
+    303,
+    255,
+    373,
+    252
+  ],
+  "planar_variants/plain_back__center_180.jpg": [
+    284,
+    213,
+    373,
+    252
+  ],
+  "planar_variants/plain_back__dim_0.jpg": [
+    303,
+    255,
+    373,
+    252
+  ],
+  "planar_variants/plain_back__down_0.jpg": [
+    303,
+    352,
+    373,
+    252
+  ],
+  "planar_variants/plain_back__left_0.jpg": [
+    160,
+    255,
+    373,
+    252
+  ],
+  "planar_variants/plain_back__left_12.jpg": [
+    172,
+    216,
+    417,
+    324
+  ],
+  "planar_variants/plain_back__lowres_0.jpg": [
+    303,
+    255,
+    373,
+    252
+  ],
+  "planar_variants/plain_back__right_0.jpg": [
+    445,
+    255,
+    373,
+    252
+  ],
+  "planar_variants/plain_back__right_m12.jpg": [
+    389,
+    220,
+    417,
+    324
+  ],
+  "planar_variants/plain_back__up_0.jpg": [
+    303,
+    157,
+    373,
+    252
+  ],
+  "planar_variants/plain_back__up_180.jpg": [
+    284,
+    130,
+    373,
+    252
+  ],
+  "planar_variants/sbi_back__blur_0.jpg": [
+    252,
+    206,
+    456,
+    307
+  ],
+  "planar_variants/sbi_back__center_0.jpg": [
+    252,
+    206,
+    456,
+    307
+  ],
+  "planar_variants/sbi_back__center_180.jpg": [
+    252,
+    206,
+    456,
+    307
+  ],
+  "planar_variants/sbi_back__dim_0.jpg": [
+    252,
+    206,
+    456,
+    307
+  ],
+  "planar_variants/sbi_back__down_0.jpg": [
+    252,
+    304,
+    456,
+    307
+  ],
+  "planar_variants/sbi_back__left_0.jpg": [
+    109,
+    206,
+    457,
+    307
+  ],
+  "planar_variants/sbi_back__left_12.jpg": [
+    112,
+    162,
+    511,
+    395
+  ],
+  "planar_variants/sbi_back__lowres_0.jpg": [
+    252,
+    206,
+    456,
+    307
+  ],
+  "planar_variants/sbi_back__right_0.jpg": [
+    394,
+    206,
+    457,
+    307
+  ],
+  "planar_variants/sbi_back__right_m12.jpg": [
+    337,
+    162,
+    511,
+    395
+  ],
+  "planar_variants/sbi_back__up_0.jpg": [
+    252,
+    109,
+    456,
+    307
+  ],
+  "planar_variants/sbi_back__up_180.jpg": [
+    252,
+    124,
+    456,
+    307
+  ],
+  "planar_variants/sbi_front__blur_0.jpg": [
+    252,
+    208,
+    456,
+    304
+  ],
+  "planar_variants/sbi_front__center_0.jpg": [
+    252,
+    208,
+    456,
+    304
+  ],
+  "planar_variants/sbi_front__center_180.jpg": [
+    252,
+    208,
+    456,
+    304
+  ],
+  "planar_variants/sbi_front__dim_0.jpg": [
+    252,
+    208,
+    456,
+    304
+  ],
+  "planar_variants/sbi_front__down_0.jpg": [
+    252,
+    306,
+    456,
+    303
+  ],
+  "planar_variants/sbi_front__left_0.jpg": [
+    109,
+    208,
+    457,
+    304
+  ],
+  "planar_variants/sbi_front__left_12.jpg": [
+    113,
+    164,
+    509,
+    392
+  ],
+  "planar_variants/sbi_front__lowres_0.jpg": [
+    252,
+    208,
+    456,
+    304
+  ],
+  "planar_variants/sbi_front__right_0.jpg": [
+    394,
+    208,
+    457,
+    304
+  ],
+  "planar_variants/sbi_front__right_m12.jpg": [
+    338,
+    164,
+    509,
+    392
+  ],
+  "planar_variants/sbi_front__up_0.jpg": [
+    252,
+    111,
+    456,
+    303
+  ],
+  "planar_variants/sbi_front__up_180.jpg": [
+    252,
+    126,
+    456,
+    303
+  ]
+}
