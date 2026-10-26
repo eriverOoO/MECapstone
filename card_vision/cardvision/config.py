@@ -54,9 +54,14 @@ def load_config(path: str | Path = DEFAULT_PATH) -> dict:
             or not math.isfinite(padding) or not 0 <= padding <= .50):
         raise ValueError("roi_padding_fraction must be between 0 and 0.50")
     chip = cfg["chip"]
-    for key in ("position_filter","edge_candidates"):
+    for key in ("position_filter","edge_candidates","large_wide_filter"):
         if not isinstance(chip.setdefault(key,True),bool):
             raise ValueError(f"chip.{key} must be boolean")
+    for key,default,lower,upper in (("large_wide_area_min",.028,0,1),("large_wide_aspect_min",1.50,1,3)):
+        value=chip.setdefault(key,default)
+        if (not isinstance(value,(int,float)) or isinstance(value,bool)
+                or not math.isfinite(value) or not lower<value<upper):
+            raise ValueError(f"chip.{key} must be finite and between {lower} and {upper}")
     region = chip.setdefault("expected_region",[.12,.32,.32,.58])
     margin = chip.setdefault("position_margin",[.02,.04])
     if (not isinstance(region,(list,tuple)) or len(region)!=4

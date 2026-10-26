@@ -1,0 +1,626 @@
+[
+  {
+    "file": "originals/aircash_back.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "originals/aircash_front.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "originals/nh_back.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "originals/nh_front.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "originals/piraeus_visa_back.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "originals/piraeus_visa_front.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "originals/sbi_back.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "originals/sbi_front.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/aircash_back__blur_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/aircash_back__center_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/aircash_back__center_180.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/aircash_back__dim_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/aircash_back__down_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/aircash_back__left_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/aircash_back__left_12.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/aircash_back__lowres_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/aircash_back__right_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/aircash_back__right_m12.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/aircash_back__up_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/aircash_back__up_180.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/aircash_front__blur_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/aircash_front__center_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/aircash_front__center_180.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "CORRECT"
+  },
+  {
+    "file": "planar_variants/aircash_front__dim_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/aircash_front__down_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/aircash_front__left_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/aircash_front__left_12.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/aircash_front__lowres_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/aircash_front__right_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/aircash_front__right_m12.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/aircash_front__up_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/aircash_front__up_180.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "CORRECT"
+  },
+  {
+    "file": "planar_variants/nh_back__blur_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/nh_back__center_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/nh_back__center_180.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/nh_back__dim_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/nh_back__down_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/nh_back__left_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/nh_back__left_12.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/nh_back__lowres_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/nh_back__right_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/nh_back__right_m12.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/nh_back__up_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/nh_back__up_180.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/nh_front__blur_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/nh_front__center_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/nh_front__center_180.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "CORRECT"
+  },
+  {
+    "file": "planar_variants/nh_front__dim_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/nh_front__down_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/nh_front__left_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/nh_front__left_12.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/nh_front__lowres_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/nh_front__right_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/nh_front__right_m12.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/nh_front__up_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/nh_front__up_180.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "CORRECT"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_back__blur_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_back__center_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_back__center_180.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_back__dim_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_back__down_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_back__left_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_back__left_12.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_back__lowres_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_back__right_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_back__right_m12.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_back__up_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_back__up_180.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_front__blur_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_front__center_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_front__center_180.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "CORRECT"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_front__dim_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_front__down_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_front__left_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_front__left_12.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_front__lowres_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_front__right_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_front__right_m12.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_front__up_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/piraeus_visa_front__up_180.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "CORRECT"
+  },
+  {
+    "file": "planar_variants/sbi_back__blur_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/sbi_back__center_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/sbi_back__center_180.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/sbi_back__dim_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/sbi_back__down_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/sbi_back__left_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/sbi_back__left_12.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/sbi_back__lowres_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/sbi_back__right_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/sbi_back__right_m12.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/sbi_back__up_0.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/sbi_back__up_180.jpg",
+    "card_present": true,
+    "chip_visible": false,
+    "status": "CHIP_NOT_VISIBLE"
+  },
+  {
+    "file": "planar_variants/sbi_front__blur_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/sbi_front__center_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/sbi_front__center_180.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "CORRECT"
+  },
+  {
+    "file": "planar_variants/sbi_front__dim_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/sbi_front__down_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/sbi_front__left_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/sbi_front__left_12.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/sbi_front__lowres_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/sbi_front__right_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/sbi_front__right_m12.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/sbi_front__up_0.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "REVERSED"
+  },
+  {
+    "file": "planar_variants/sbi_front__up_180.jpg",
+    "card_present": true,
+    "chip_visible": true,
+    "status": "CORRECT"
+  }
+]

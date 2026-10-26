@@ -47,7 +47,8 @@ def render(frame: np.ndarray, row: dict, threshold: float) -> Image.Image:
             continue
         points=[tuple(p) for p in rejected["polygon"]]
         draw.line(points+[points[0]],fill=(240,55,60),width=3)
-        draw.text((max(0,min(p[0] for p in points)),max(0,min(p[1] for p in points)-28)),"위치 제외",font=font(21),fill=(210,20,35),stroke_width=1,stroke_fill=(255,255,255))
+        reason="크기·비율 제외" if rejected["reason"]=="large_and_wide_chip_candidate" else "위치 제외"
+        draw.text((max(0,min(p[0] for p in points)),max(0,min(p[1] for p in points)-28)),reason,font=font(21),fill=(210,20,35),stroke_width=1,stroke_fill=(255,255,255))
     if row["chip_polygon"]:
         points=[tuple(p) for p in row["chip_polygon"]]
         draw.line(points+[points[0]],fill=(255,205,0),width=4 if row["chip_detected"] else 1)
@@ -66,6 +67,7 @@ def main() -> None:
     parser.add_argument("--images",type=Path,default=ROOT/"data/test/topdown_kit/images")
     parser.add_argument("--previous",type=Path,default=ROOT/"outputs/topdown_roi_retest/results.json")
     parser.add_argument("--output",type=Path,default=ROOT/"outputs/chip_position_retest")
+    parser.add_argument("--size-comparison",action="store_true",help="Compare the joint size/aspect guard against a saved position-filter run")
     args=parser.parse_args()
     previous=json.loads(args.previous.read_text(encoding="utf-8"))
     base=load_config()
@@ -87,9 +89,11 @@ def main() -> None:
         path.parent.mkdir(parents=True,exist_ok=True)
         render(frame,row,base["chip"]["min_score"]).save(path)
         rows.append(row)
-        cfg["chip"]["edge_candidates"]=False
-        _,simple=VisionPipeline(cfg).process_image(raw)
-        position_only.append({"file":old["file"],**simple.record()})
+        if not args.size_comparison:
+            cfg["chip"]["edge_candidates"]=False
+            cfg["chip"]["large_wide_filter"]=False
+            _,simple=VisionPipeline(cfg).process_image(raw)
+            position_only.append({"file":old["file"],**simple.record()})
 
     def summary(records):
         classes=Counter(r.get("card_class",{ "CORRECT":"FRONT_CORRECT","REVERSED":"FRONT_REVERSED","CHIP_NOT_VISIBLE":"BACK_LIKELY","UNKNOWN":"UNKNOWN"}[r["status"]]) for r in records)
@@ -101,7 +105,14 @@ def main() -> None:
                 "back_as_front":sum(r["status"] in ("CORRECT","REVERSED") for r in back),
                 "front_as_back":sum(r["status"]=="CHIP_NOT_VISIBLE" for r in front),
                 "mean_processing_ms":sum(r["processing_ms"] for r in records)/len(records)}
-    results={"previous":summary(previous["images"]),"position_filter_only":summary(position_only),"updated":summary(rows)}
+    results={"previous":summary(previous["images"]),"updated":summary(rows)}
+    if not args.size_comparison:
+        results["position_filter_only"]=summary(position_only)
+    current_by_file={r["file"]:r for r in rows}
+    positive_front=[r for r in previous["images"] if r["chip_detected"] and Path(r["file"]).stem.split("__")[0].endswith("front")]
+    results["previous_front_chip_preservation"]={"previous_count":len(positive_front),
+        "preserved_count":sum(current_by_file[r["file"]]["chip_detected"] for r in positive_front),
+        "lost_files":[r["file"] for r in positive_front if not current_by_file[r["file"]]["chip_detected"]]}
     # Reference labels for the same already-reviewed source images: not a held-out benchmark.
     supported={"aircash_front","aircash_back","nh_front","nh_back","piraeus_visa_front","piraeus_visa_back","sbi_front","sbi_back"}
     labels=[]
@@ -136,12 +147,13 @@ def main() -> None:
            ("originals/aircash_back.jpg","홀로그램 위치 제외 사례"),
            ("originals/piraeus_visa_front.jpg","실제 칩 / 결제 아이콘 구분"),
            ("planar_variants/piraeus_master_back__center_0.jpg","세로 배치: 기구 방향 판단 보류"),
-           ("originals/sbi_back.jpg","남아 있는 오검출 확인")]
+           ("originals/sbi_back.jpg","크기·비율 제외 확인" if args.size_comparison else "남아 있는 오검출 확인")]
     lookup={r["file"]:r for r in rows}
     sheet=Image.new("RGB",(1460,1690),(245,247,250))
     draw=ImageDraw.Draw(sheet)
-    draw.text((22,12),"넉넉한 칩 위치 필터 + 앞면 정·역방향 / 뒷면 추정",font=font(31),fill=(20,25,35))
-    draw.text((22,61),"보라: 칩 허용 위치   빨강: 위치로 제외   노랑: 남은 칩 후보   파랑: 카드",font=font(23),fill=(40,45,50))
+    title="느슨한 크기·비율 결합 필터 + 카드 상태 재검사" if args.size_comparison else "넉넉한 칩 위치 필터 + 앞면 정·역방향 / 뒷면 추정"
+    draw.text((22,12),title,font=font(31),fill=(20,25,35))
+    draw.text((22,61),"보라: 칩 허용 위치   빨강: 위치/크기로 제외   노랑: 남은 칩 후보   파랑: 카드",font=font(23),fill=(40,45,50))
     draw.text((22,103),f"169장 재검사 | 뒷면 칩 검출 표시 {results['previous']['chip_flags_on_back']} → {results['updated']['chip_flags_on_back']} (91장 중)",font=font(24),fill=(25,70,110))
     draw.text((22,146),"미검출은 뒷면 확정이 아닙니다. 세로 배치·화질·검출 실패는 판단 보류할 수 있습니다.",font=font(20),fill=(75,80,90))
     for index,(name,title) in enumerate(cases):

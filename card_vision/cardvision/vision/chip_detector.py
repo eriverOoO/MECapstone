@@ -3,6 +3,7 @@ from dataclasses import dataclass
 import cv2
 import numpy as np
 from .chip_position import expected_regions, position_allowed
+from .chip_geometry import oversized_and_wide
 
 
 @dataclass
@@ -63,10 +64,16 @@ class ChipDetector:
                 if texture < .2 or line_count < 2:
                     score = min(score, .49)
                 candidate = ChipCandidate((x,y,bw,bh), score, method)
+                reject_reason=None
                 if not position_allowed(candidate.box,card.shape,self.cfg):
+                    reject_reason="outside_expected_chip_position"
+                elif oversized_and_wide(candidate.box,card.shape,self.cfg):
+                    reject_reason="large_and_wide_chip_candidate"
+                if reject_reason is not None:
                     rejected.append({"box":candidate.box,"score":score,"method":method,
                                      "relative_center":((x+bw/2)/w,(y+bh/2)/h),
-                                     "reason":"outside_expected_chip_position"})
+                                     "area_fraction":fraction,"aspect_ratio":aspect,
+                                     "reason":reject_reason})
                     continue
                 # Deduplicate branches detecting the same physical region.
                 def overlap(other: ChipCandidate) -> bool:

@@ -29,6 +29,8 @@ card_vision/outputs/chip_position_retest/*
 !card_vision/outputs/chip_position_retest/classification_preview.png
 !card_vision/outputs/chip_position_retest/annotated/
 !card_vision/outputs/chip_position_retest/annotated/**
+!card_vision/outputs/chip_size_retest/
+!card_vision/outputs/chip_size_retest/**
 !card_vision/outputs/stage_roi_validation/
 !card_vision/outputs/stage_roi_validation/**
 !card_vision/outputs/synthetic_validation/

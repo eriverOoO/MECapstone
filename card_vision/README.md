@@ -176,6 +176,7 @@ Headless에서도 기본값은 완료 신호를 자동 생성하지 않습니다
 - `chip.hsv_lower/upper`, 면적·점수·복수 후보 차이: 금색 분할, 은색 후보와 내부 접점 선 패턴의 기준입니다. 금속 성질 자체를 측정하지는 않습니다.
 - `chip.position_filter`: 카드 기준 예상 위치를 크게 벗어난 후보를 제외합니다. `expected_region: [x1,y1,x2,y2]`는 정규화 카드 왼쪽의 기준 영역, `position_margin: [x,y]`는 추가 여유입니다. 180도 반대 위치를 자동 생성하며 후보의 중심점만 확인합니다. 기본 실제 허용 범위는 왼쪽 `[0.10,0.28,0.34,0.62]`, 오른쪽 `[0.66,0.38,0.90,0.72]`입니다. ISO 치수를 직접 적용한 값이 아닌 조정 가능한 영상처리 기준입니다.
 - `chip.edge_candidates`: 기본 true. 카드와 칩의 색상이 비슷해 색상 분할이 실패한 경우 그레이스케일 경계 후보로 보완합니다. 실제 접점 구조를 완벽하게 확인하는 검출기는 아닙니다.
+- `chip.large_wide_filter`: 기본 true. 면적이 `large_wide_area_min: 0.028`(2.8%) 이상이면서 **동시에** 가로/세로 비율이 `large_wide_aspect_min: 1.50` 이상일 때만 제외합니다. 큰 정사각형이나 작은 가로형 후보는 그대로 허용합니다. 기존 넓은 면적/비율 범위는 유지하며, 현재 남은 두 홀로그램에 맞춘 제한적인 추가 조건입니다. 제외 이유는 `large_and_wide_chip_candidate`로 기록합니다.
 - `quality`: 카드 ROI의 블러·밝기·극단 밝기 비율과 프레임 차이 기준. 실제 영상으로 조정해야 합니다. 움직임은 전체 영상의 평균 절대 차이를 사용하므로 작은 부분 가림을 모두 검출하지 못합니다.
 - `orientation.inlet`: **기구 좌표계**의 `right/left/up/down`. y는 아래쪽이 양수입니다. 초기값 right입니다.
 - `orientation.image_to_stage`: **처리 영상 픽셀 → 기구 평면 좌표**의 3×3 호모그래피. 기본 항등행렬이면 화면 방향이 기구 방향입니다. 실제 장착 후 대응점으로 보정할 수 있습니다. `input.rotation/mirror`는 이 행렬에 앞서 적용되므로 중복 보정하지 마세요.
@@ -191,6 +192,8 @@ Headless에서도 기본값은 완료 신호를 자동 생성하지 않습니다
 UI의 보라색 두 영역은 칩 허용 위치, 빨간색 후보는 위치 때문에 제외된 영역입니다. `expected_chip_regions`와 `rejected_chips`를 로그에 저장하므로 필터가 어떤 후보를 제외했는지 추적할 수 있습니다. 현재 위치 필터로도 허용 영역 안에 있는 홀로그램은 오검출할 수 있습니다.
 
 기존 키트의 같은 169장을 다시 검사하는 명령은 `python tools/retest_chip_positions.py`입니다. [2026-10-26 재검사 보고서](outputs/chip_position_retest/REPORT.md)에서 위치 필터만 적용한 결과와 경계 후보를 함께 적용한 결과를 비교합니다.
+
+크기·비율 결합 조건과 직전 위치 필터의 비교는 `python tools/retest_chip_positions.py --previous outputs/chip_position_retest/results.json --output outputs/chip_size_retest --size-comparison`으로 실행합니다. [크기·비율 조건 재검사](outputs/chip_size_retest/REPORT.md)에서 남은 2건 제외와 이전 앞면 칩 검출 50건의 보존 여부를 확인할 수 있습니다.
 
 ### 실제 기구의 검사영역 설계
 

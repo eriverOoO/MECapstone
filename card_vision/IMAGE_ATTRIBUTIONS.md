@@ -24,6 +24,7 @@
 
 - `outputs/topdown_kit_baseline/`의 실물 이미지 PNG와 `outputs/topdown_roi_retest/annotated/`의 PNG는 파일명에 대응하는 위 원저작자의 이미지에 주석을 추가한 것입니다.
 - `outputs/chip_position_retest/annotated/` 및 `classification_preview.png`도 동일한 원본에 위치 허용 영역·제외 후보·상태 문구를 추가한 파생 결과로 같은 출처와 라이선스가 적용됩니다.
+- `outputs/chip_size_retest/annotated/` 및 해당 `classification_preview.png`는 같은 원본의 크기·비율 필터 재검사 결과이며 같은 출처와 라이선스를 적용합니다.
 - 여러 원본이 들어간 `originals_*.png`, `detection_regions_preview.png`, `before_after.png`, `roi_results_preview.png`도 위 출처에 기반합니다. 이 비교 이미지에 추가한 부분은 CC BY-SA 4.0으로 제공합니다.
 - `outputs/stage_roi_validation/`과 `outputs/synthetic_validation/`의 도형 카드는 이 프로젝트에서 생성한 합성 데이터이며 위 실물 이미지 출처와 별개입니다.
 

@@ -1,0 +1,67 @@
+{
+  "previous": {
+    "images": 169,
+    "classes": {
+      "BACK_LIKELY": 16,
+      "FRONT_REVERSED": 27,
+      "UNKNOWN": 120,
+      "FRONT_CORRECT": 6
+    },
+    "card_flags": 107,
+    "chip_flags": 52,
+    "back_images": 91,
+    "chip_flags_on_back": 2,
+    "back_as_front": 2,
+    "front_as_back": 0,
+    "mean_processing_ms": 8.05651124258437
+  },
+  "updated": {
+    "images": 169,
+    "classes": {
+      "BACK_LIKELY": 18,
+      "FRONT_REVERSED": 25,
+      "UNKNOWN": 120,
+      "FRONT_CORRECT": 6
+    },
+    "card_flags": 107,
+    "chip_flags": 50,
+    "back_images": 91,
+    "chip_flags_on_back": 0,
+    "back_as_front": 0,
+    "front_as_back": 0,
+    "mean_processing_ms": 7.782804142018059
+  },
+  "previous_front_chip_preservation": {
+    "previous_count": 50,
+    "preserved_count": 50,
+    "lost_files": []
+  },
+  "horizontal_source_audit": {
+    "previous": {
+      "images": 104,
+      "correct": 47,
+      "confusion": {
+        "CHIP_NOT_VISIBLE -> CHIP_NOT_VISIBLE": 16,
+        "REVERSED -> REVERSED": 25,
+        "CHIP_NOT_VISIBLE -> UNKNOWN": 34,
+        "REVERSED -> UNKNOWN": 19,
+        "CHIP_NOT_VISIBLE -> REVERSED": 2,
+        "CORRECT -> CORRECT": 6,
+        "CORRECT -> UNKNOWN": 2
+      }
+    },
+    "updated": {
+      "images": 104,
+      "correct": 49,
+      "confusion": {
+        "CHIP_NOT_VISIBLE -> CHIP_NOT_VISIBLE": 18,
+        "REVERSED -> REVERSED": 25,
+        "CHIP_NOT_VISIBLE -> UNKNOWN": 34,
+        "REVERSED -> UNKNOWN": 19,
+        "CORRECT -> CORRECT": 6,
+        "CORRECT -> UNKNOWN": 2
+      }
+    }
+  },
+  "note": "Same development images, same frozen per-image card ROIs; positions are loose heuristic priors, not exact ISO dimensions. Back class is inferred from no valid visible chip. Portrait/oblique sources excluded from the 104-image orientation audit. No chip-box ground truth or unseen-card accuracy claim."
+}
