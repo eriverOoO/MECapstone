@@ -6,6 +6,7 @@ from .card_detector import CardDetector
 from .chip_detector import ChipDetector
 from .geometry import classify, project
 from .temporal import Stabilizer
+from .chip_position import expected_regions
 
 
 class VisionPipeline:
@@ -61,6 +62,14 @@ class VisionPipeline:
             clipped = float(np.mean((card_gray < 8) | (card_gray > 248)))
             candidates, debug = self.chip.detect(result.normalized)
             obs.debug.update(debug)
+            ch,cw=result.normalized.shape[:2]
+            for x1,y1,x2,y2 in expected_regions(self.cfg["chip"]):
+                corners=np.array([[x1*cw,y1*ch],[x2*cw,y1*ch],[x2*cw,y2*ch],[x1*cw,y2*ch]])
+                obs.expected_chip_regions.append(project(corners,result.inverse).tolist())
+            for item in debug.get("rejected_chip_candidates",[]):
+                x,y,w,h=item["box"]
+                corners=np.array([[x,y],[x+w,y],[x+w,y+h],[x,y+h]])
+                obs.rejected_chips.append({**item,"polygon":project(corners,result.inverse).tolist()})
             obs.debug["quality"] = {"blur_variance":blur,"brightness":brightness,"clipped_fraction":clipped,"motion":None if still_image else motion}
             if candidates:
                 best = candidates[0]

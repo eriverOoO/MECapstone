@@ -20,6 +20,10 @@ chip:
   max_area_fraction: 0.09
   min_score: 0.60
   ambiguity_margin: 0.10
+  position_filter: true
+  expected_region: [0.12, 0.32, 0.32, 0.58] # x1,y1,x2,y2 in the normalized card
+  position_margin: [0.02, 0.04]             # extra x/y tolerance; 180deg counterpart is automatic
+  edge_candidates: true                   # recover contact borders on same-color backgrounds
 quality:
   min_blur_variance: 25.0
   min_brightness: 30.0

@@ -53,4 +53,18 @@ def load_config(path: str | Path = DEFAULT_PATH) -> dict:
     if (not isinstance(padding,(int,float)) or isinstance(padding,bool)
             or not math.isfinite(padding) or not 0 <= padding <= .50):
         raise ValueError("roi_padding_fraction must be between 0 and 0.50")
+    chip = cfg["chip"]
+    for key in ("position_filter","edge_candidates"):
+        if not isinstance(chip.setdefault(key,True),bool):
+            raise ValueError(f"chip.{key} must be boolean")
+    region = chip.setdefault("expected_region",[.12,.32,.32,.58])
+    margin = chip.setdefault("position_margin",[.02,.04])
+    if (not isinstance(region,(list,tuple)) or len(region)!=4
+            or not all(isinstance(v,(int,float)) and not isinstance(v,bool) and math.isfinite(v) for v in region)
+            or not 0<=region[0]<region[2]<.5 or not 0<=region[1]<region[3]<=1):
+        raise ValueError("chip.expected_region must be normalized [x1,y1,x2,y2] on the left half")
+    if (not isinstance(margin,(list,tuple)) or len(margin)!=2
+            or not all(isinstance(v,(int,float)) and not isinstance(v,bool) and math.isfinite(v) and 0<=v<=.20 for v in margin)
+            or region[2]+margin[0]>=.5):
+        raise ValueError("chip.position_margin must contain x/y tolerances in [0,0.20] without joining both regions")
     return cfg

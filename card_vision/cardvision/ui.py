@@ -21,6 +21,11 @@ def overlay(frame: np.ndarray, obs: Observation, controller, cfg: dict, paused: 
         cv2.putText(view,"SEARCH ROI",(x+5,y+18),cv2.FONT_HERSHEY_SIMPLEX,.5,(80,180,80),1)
     if obs.card_quad is not None:
         cv2.polylines(view,[obs.card_quad.astype(np.int32)],True,(255,170,0),2)
+    for region in obs.expected_chip_regions:
+        cv2.polylines(view,[np.asarray(region,np.int32)],True,(220,100,220),1)
+    for candidate in obs.rejected_chips:
+        if candidate["score"]>=cfg["chip"]["min_score"]:
+            cv2.polylines(view,[np.asarray(candidate["polygon"],np.int32)],True,(0,0,230),1)
     if obs.chip_polygon is not None:
         cv2.polylines(view,[obs.chip_polygon.astype(np.int32)],True,(0,220,255),2)
     if obs.chip_center:
@@ -50,7 +55,7 @@ def overlay(frame: np.ndarray, obs: Observation, controller, cfg: dict, paused: 
             "a ACK success | x ACK failure | r reset cycle | o open file | s save | q quit"]
     if still_image:
         rows[0] = "SINGLE IMAGE REVIEW | motion / temporal stability: N/A"
-        rows[1] = f"Image: {obs.status.value}   Card: {obs.card_detected}   Chip: {obs.chip_detected}"
+        rows[1] = f"Class: {obs.card_class}   Card: {obs.card_detected}   Chip: {obs.chip_detected}"
         rows[2] = f"Suggested action: {suggested_action(obs.status)} (review only)"
         rows[4] = f"Reason: {obs.reason}"
         rows[6] = "d intermediates | o open another file | s save annotated image + JSON"

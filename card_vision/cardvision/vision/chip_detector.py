@@ -2,12 +2,14 @@
 from dataclasses import dataclass
 import cv2
 import numpy as np
+from .chip_position import expected_regions, position_allowed
 
 
 @dataclass
 class ChipCandidate:
     box: tuple[int, int, int, int]
     score: float
+    method: str = "color"
 
 
 class ChipDetector:
@@ -25,9 +27,15 @@ class ChipDetector:
         debug = {"gold_mask": gold, "silver_mask": silver}
         preview = card.copy()
         h,w = gray.shape
-        for mask, metallic_bonus in ((gold, 1.), (silver, .7)):
-            joined = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, np.ones((5,5), np.uint8))
-            contours, _ = cv2.findContours(joined, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        branches=[(gold,1.,"gold"),(silver,.7,"silver")]
+        if self.cfg.get("edge_candidates",True):
+            borders=cv2.Canny(cv2.GaussianBlur(gray,(3,3),0),40,110)
+            debug["chip_edges"]=borders
+            branches.append((borders,.6,"edge"))
+        rejected=[]
+        for mask, metallic_bonus, method in branches:
+            joined = mask if method=="edge" else cv2.morphologyEx(mask, cv2.MORPH_CLOSE, np.ones((5,5), np.uint8))
+            contours, _ = cv2.findContours(joined, cv2.RETR_LIST if method=="edge" else cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
             for contour in contours:
                 x,y,bw,bh = cv2.boundingRect(contour)
                 fraction = bw*bh/(w*h)
@@ -37,7 +45,7 @@ class ChipDetector:
                 if not .60 < aspect < 1.85 or x < 5 or y < 5 or x+bw > w-5 or y+bh > h-5:
                     continue
                 fill = cv2.contourArea(contour)/(bw*bh)
-                if fill < .6:
+                if fill < (.70 if method=="edge" else .6):
                     continue
                 patch = gray[y:y+bh, x:x+bw]
                 inner = patch[max(2,bh//8):bh-max(2,bh//8), max(2,bw//8):bw-max(2,bw//8)]
@@ -54,18 +62,34 @@ class ChipDetector:
                 score = float(.15*metallic_bonus + .20*min(1.,fill) + .30*texture + .35*pattern)
                 if texture < .2 or line_count < 2:
                     score = min(score, .49)
-                candidate = ChipCandidate((x,y,bw,bh), score)
+                candidate = ChipCandidate((x,y,bw,bh), score, method)
+                if not position_allowed(candidate.box,card.shape,self.cfg):
+                    rejected.append({"box":candidate.box,"score":score,"method":method,
+                                     "relative_center":((x+bw/2)/w,(y+bh/2)/h),
+                                     "reason":"outside_expected_chip_position"})
+                    continue
                 # Deduplicate branches detecting the same physical region.
-                duplicate = next((c for c in candidates if abs(c.box[0]-x)+abs(c.box[1]-y) < 10), None)
+                def overlap(other: ChipCandidate) -> bool:
+                    ox,oy,ow,oh=other.box
+                    intersection=max(0,min(x+bw,ox+ow)-max(x,ox))*max(0,min(y+bh,oy+oh)-max(y,oy))
+                    return intersection/max(1,bw*bh+ow*oh-intersection)>.50
+                duplicate = next((c for c in candidates if overlap(c)), None)
                 if duplicate is None:
                     candidates.append(candidate)
                 elif candidate.score > duplicate.score:
                     candidates.remove(duplicate)
                     candidates.append(candidate)
         candidates.sort(key=lambda c:c.score, reverse=True)
+        for x1,y1,x2,y2 in expected_regions(self.cfg):
+            cv2.rectangle(preview,(round(x1*w),round(y1*h)),(round(x2*w),round(y2*h)),(220,100,220),1)
+        for item in rejected:
+            if item["score"]>=self.cfg["min_score"]:
+                x,y,bw,bh=item["box"]
+                cv2.rectangle(preview,(x,y),(x+bw,y+bh),(0,0,230),1)
         for candidate in candidates:
             x,y,bw,bh = candidate.box
             cv2.rectangle(preview, (x,y), (x+bw,y+bh), (0,200,255), 2)
             cv2.putText(preview, f"{candidate.score:.2f}", (x,y-4), cv2.FONT_HERSHEY_SIMPLEX, .45, (0,0,255),1)
         debug["candidates"] = preview
+        debug["rejected_chip_candidates"] = rejected
         return candidates, debug

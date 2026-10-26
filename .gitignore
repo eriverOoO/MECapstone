@@ -19,6 +19,16 @@ card_vision/outputs/topdown_kit_baseline/*
 !card_vision/outputs/topdown_kit_baseline/batch_20261024_153642_f36f4efa/**
 !card_vision/outputs/topdown_roi_retest/
 !card_vision/outputs/topdown_roi_retest/**
+!card_vision/outputs/chip_position_retest/
+card_vision/outputs/chip_position_retest/*
+!card_vision/outputs/chip_position_retest/REPORT.md
+!card_vision/outputs/chip_position_retest/results.json
+!card_vision/outputs/chip_position_retest/results.csv
+!card_vision/outputs/chip_position_retest/summary.json
+!card_vision/outputs/chip_position_retest/reviewed_horizontal_labels.json
+!card_vision/outputs/chip_position_retest/classification_preview.png
+!card_vision/outputs/chip_position_retest/annotated/
+!card_vision/outputs/chip_position_retest/annotated/**
 !card_vision/outputs/stage_roi_validation/
 !card_vision/outputs/stage_roi_validation/**
 !card_vision/outputs/synthetic_validation/

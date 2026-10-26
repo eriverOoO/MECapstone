@@ -52,7 +52,12 @@ Wikimedia Commons 원본 13장과 그 평면 변형 156장, 총 169장에 대한
 - [첫 검사 보고서](card_vision/outputs/topdown_kit_baseline/TEST_REPORT.md) · [첫 검사 전체 169장](card_vision/outputs/topdown_kit_baseline/batch_20261024_153642_f36f4efa/annotated)
 - [검색창 적용 보고서](card_vision/outputs/topdown_roi_retest/REPORT.md) · [재검사 전체 169장](card_vision/outputs/topdown_roi_retest/annotated)
 - [전후 이미지 비교](card_vision/outputs/topdown_roi_retest/before_after.png) · [재검사 CSV](card_vision/outputs/topdown_roi_retest/results.csv)
-- [테스트·미검증 항목](card_vision/VALIDATION.md) — Windows PC에서 37개 테스트 통과. 실제 기구·검정 필라멘트 바닥·Pi 성능은 미검증.
+- [테스트·미검증 항목](card_vision/VALIDATION.md) — Windows PC에서 46개 테스트 통과. 실제 기구·검정 필라멘트 바닥·Pi 성능은 미검증.
+
+2026-10-26에는 여유 있는 칩 위치 필터와 같은 색상 배경에서 접점 경계 후보를 찾는 보완을 적용했습니다. 같은 169장 재검사에서 칩 없는 뒷면의 칩 검출 표시는 **19 → 2장**, 앞면을 뒷면으로 추정한 사례는 **4 → 0장**이었습니다. 최종 판정은 앞면 정방향 6장, 앞면 반대방향 27장, 뒷면 추정 16장, 판단 보류 120장입니다. 같은 개발 이미지의 회귀 검사이며 새로운 카드에 대한 성능 추정치가 아닙니다. 본 PC에서는 46개 테스트가 통과했습니다.
+
+- [칩 위치 필터 및 세 가지 업무 상태 보고서](card_vision/outputs/chip_position_retest/REPORT.md)
+- [분류 결과 이미지](card_vision/outputs/chip_position_retest/classification_preview.png) · [전체 169장](card_vision/outputs/chip_position_retest/annotated)
 
 원본별 검사창을 키트의 이동/회전 정보로 환산한 오프라인 실험이며, 고정된 실물 카메라에서 하나의 검색창을 사용한 시험은 아닙니다.
 

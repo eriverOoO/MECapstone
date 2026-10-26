@@ -1,0 +1,83 @@
+{
+  "previous": {
+    "images": 169,
+    "classes": {
+      "FRONT_REVERSED": 25,
+      "UNKNOWN": 123,
+      "FRONT_CORRECT": 11,
+      "BACK_LIKELY": 10
+    },
+    "card_flags": 107,
+    "chip_flags": 64,
+    "back_images": 91,
+    "chip_flags_on_back": 19,
+    "back_as_front": 10,
+    "front_as_back": 4,
+    "mean_processing_ms": 6.692084023576473
+  },
+  "position_filter_only": {
+    "images": 169,
+    "classes": {
+      "BACK_LIKELY": 28,
+      "FRONT_REVERSED": 17,
+      "UNKNOWN": 120,
+      "FRONT_CORRECT": 4
+    },
+    "card_flags": 107,
+    "chip_flags": 40,
+    "back_images": 91,
+    "chip_flags_on_back": 2,
+    "back_as_front": 2,
+    "front_as_back": 12,
+    "mean_processing_ms": 6.959897633130273
+  },
+  "updated": {
+    "images": 169,
+    "classes": {
+      "BACK_LIKELY": 16,
+      "FRONT_REVERSED": 27,
+      "UNKNOWN": 120,
+      "FRONT_CORRECT": 6
+    },
+    "card_flags": 107,
+    "chip_flags": 52,
+    "back_images": 91,
+    "chip_flags_on_back": 2,
+    "back_as_front": 2,
+    "front_as_back": 0,
+    "mean_processing_ms": 8.05651124258437
+  },
+  "horizontal_source_audit": {
+    "previous": {
+      "images": 104,
+      "correct": 25,
+      "confusion": {
+        "CHIP_NOT_VISIBLE -> REVERSED": 8,
+        "REVERSED -> REVERSED": 15,
+        "CHIP_NOT_VISIBLE -> UNKNOWN": 36,
+        "REVERSED -> UNKNOWN": 20,
+        "REVERSED -> CORRECT": 5,
+        "CHIP_NOT_VISIBLE -> CORRECT": 2,
+        "CHIP_NOT_VISIBLE -> CHIP_NOT_VISIBLE": 6,
+        "CORRECT -> CORRECT": 4,
+        "CORRECT -> UNKNOWN": 2,
+        "CORRECT -> REVERSED": 2,
+        "REVERSED -> CHIP_NOT_VISIBLE": 4
+      }
+    },
+    "updated": {
+      "images": 104,
+      "correct": 47,
+      "confusion": {
+        "CHIP_NOT_VISIBLE -> CHIP_NOT_VISIBLE": 16,
+        "REVERSED -> REVERSED": 25,
+        "CHIP_NOT_VISIBLE -> UNKNOWN": 34,
+        "REVERSED -> UNKNOWN": 19,
+        "CHIP_NOT_VISIBLE -> REVERSED": 2,
+        "CORRECT -> CORRECT": 6,
+        "CORRECT -> UNKNOWN": 2
+      }
+    }
+  },
+  "note": "Same development images, same frozen per-image card ROIs; positions are loose heuristic priors, not exact ISO dimensions. Back class is inferred from no valid visible chip. Portrait/oblique sources excluded from the 104-image orientation audit. No chip-box ground truth or unseen-card accuracy claim."
+}
